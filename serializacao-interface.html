@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os fundamentos de POO.</title>
+    <script src="./js/mains.js" defer></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="header">
+    <h1>Serialização e Interface em Java</h1>
+</div>
+
+<div class="topnav">
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="jp.html">Pilares da OO</a></li>
+        <li><a href="pg2.html">Atributos</a></li>
+        <li><a href="pg3.html">Métodos</a></li>
+        <li><a href="pg4.html">Pacotes</a></li>
+        <li><a href="serializacao-interface.html">Interface e Serialização</a></li>
+        <li><a href="pg7.html">Enumerações</a></li>
+        <li><a href="pg8.html">Relacionamentos</a></li>
+      </ul>
+</div>
+</div>
+
+<div class="row">
+    <div class="column side">
+        </div>
+        <p><div class="column middle">
+
+<h1>O que é Serialização de Objetos em Java?</h1>
+    <p>A serialização resume-se em salvar, gravar, capturar o estado de um objeto. Ou seja, tenho um objeto de uma classe e quero salvar seu estado.
+        Usar serialização permite que você crie o objeto ou uma variável de instância de uma classe e grave em um arquivo para, futuramente, utilizar esse objeto/variável com seu estado que foi gravado.
+        Serialização é a técnica que permite transformar o estado de um objeto em uma sequência bytes. Depois que um objeto for serializado ele pode ser gravado (ou persistido) em um arquivo de dados e recuperado do arquivo e desserializado para recriar o objeto na memória.
+    </p>
+    <h1>etapas da serialização e desserialização</h1>
+    <p> processo de serialização de objetos com o propósito de persisti-los em arquivos de dados passa por três etapas:</p>
+       <p>a) Estruturar as informações do objeto em uma classe que implementa a interface “Serializable:” classe “Pessoa” na Listagem 1;</p>
+        <p>b) Persistir os objetos serializados em um arquivo binário: método “gravarArquivoBinario()” da classe Empacotamento na Listagem 2;</p>
+        <p>c) Recuperar os objetos serializados do arquivo binário: método “lerArquivoBinario()” da classe Empacotamento na Listagem 2 </p>
+        <img src="img/img13.webp">
+
+
+        <h1> O que é uma interface em Java?</h1>
+        <p>Uma interface em Java nada mais é que uma classe abstrata composta somente por métodos abstratos. E como tal, obviamente não pode ser instanciada.
+            Ou seja, ela só contém as declarações dos métodos e constantes sem nenhuma implementação.
+            Ela serve para que outras classes, baseadas nessa interface, implementem esses métodos para fins específicos.
+            Ela é uma espécie de comunicação entre meios.
+            </p>
+            <img src="img/img12.png">
+</div>
+        <div class="column side">
+        </div>
+    </div>
+
+</body>
+<footer>
+    <div class="footer">
+        <p><button>
+            <a href="#" id="openModalBtn">Saiba mais:</a>
+        </button>
+
+     <div id="modalContainer">
+        <iframe id="youtubeIframe" width="1280" height="720" src="https://www.youtube.com/watch?v=rgkXr5zD_zs" frameborder="0" allowfullscreen>
+        </iframe>
+
+    </div>
+</footer>
+</html>
