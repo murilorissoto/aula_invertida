@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    text-align: justify;
+    background-color:#1d5154;
+  }
+  input{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 25px;
+
+  }
+
+
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 20%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 60%;
+    background-color: #333;
+    color:#f2f2f2;
+    padding: 30px;
+  }
+
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+    }
+
+h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+img{
+    width: 500px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a {
+    transition-duration: 0.4s;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #04AA6D;
+    box-shadow: 0 0 30px   #04AA6D;
+    color: rgb(255, 255, 255);
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  h2{
+    font-family: sans-serif;
+  }
+
+  button {
+    background-color: white;
+    color: #04AA6D;
+    border: 2px solid #04AA6D;
+    width: 170px;
+    height: 40px;
+    border-radius: 2px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    
+  }
+  button {
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color: #04AA6D;
+    color: white;
+    box-shadow: 0 0 30px   #04AA6D;
+  }
+  #openModalBtn {
+    cursor: pointer;
+  }
+  
+  #modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    background: rgba(0, 0, 0, 0.7);
+    animation: fadeIn 0.5s;
+  }
+  
+  iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 5px solid #fff;
+    border-radius: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
